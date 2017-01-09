@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>Swiper :: Swiper 3.4.1</title> 
+<style>
+@charset "utf-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:12px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;background-color:#f4f4f4;color:#000;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address,i{font-style:normal}
+a{color:#000;text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.u_hc{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+.u_vc,.u_skip{position:absolute;*left:-9999em;z-index:-1;font-size:4px;line-height:1px;color:transparent}
+#ct{clear:both;width:100%;background-color:#fff}
+#ct:after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+body{padding:0 14px;background-color:#fff;word-wrap:break-word;word-break:break-all}
+header{padding:1em 0;border-bottom:3px solid #222}
+.hd_h1{font-size:1.2em}
+.hd_svc{display:block;position:absolute;top:0;right:4px;width:3em;padding:.8em 24px .7em .6em;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;font-size:.86em;line-height:1.1em;color:#666}
+.hd_wr{white-space:nowrap}
+.sec_h{clear:both;padding:2em .1em .4em;border-bottom:1px solid #000;font-size:1.2em}
+.sec_h2{clear:both;padding:1em .1em .4em;border-bottom:1px dotted #888;font-size:1em}
+.sec_h2::before{display:inline-block;margin-right:.25em;border:2px solid transparent;border-left-color:#000;vertical-align:3px;content:''}
+.new{display:inline-block;margin-left:7px;font-size:.75em;font-weight:bold;color:#ff0000;vertical-align:top}
+.new:before{display:inline-block;margin-right:2px;padding:0 3px;background:#ff0000;font-weight:bold;color:#fff;content:'new'}
+.update{display:inline-block;margin-left:7px;font-size:.75em;font-weight:bold;color:#0000ff;vertical-align:top}
+.update:before{display:inline-block;margin-right:2px;padding:0 3px;background:#0000ff;font-weight:bold;color:#fff;content:'update'}
+ul{font-size:1.1em}
+li{border-bottom:1px solid #dfdfdf}
+li a{display:block;padding:.7em 31px .6em .1em;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;_zoom:1}
+.lidv{margin-top:1px;border-top:1px solid #dfdfdf}
+li span{margin-left:.4em;font-size:.86em;color:#909090}
+li em{color:#c60000}
+li i{font-weight:bold;color:#3399cc}
+li i:before,li b:before{display:inline-block;content:'('}
+li i:after,li b:after{display:inline-block;content:')'}
+li b{font-weight:normal;font-size:.9em;color:#999900}
+footer{clear:both;margin:2.5em 0 4em;padding:6px 2px 2px;background:#f4f4f4;font-size:.86em;line-height:1.6em;color:#333;text-align:center}
+dt,dd{display:inline;color:#333}
+dt:after{display:inline;content:': '}
+dd:last-of-type{display:block;color:#aaa}
+.ft_a{display:inline-block;padding:2px 2px 5px;color:#16d;letter-spacing:-1px;text-decoration:underline}
+.gu_table{width:100%;border-collapse:collapse}
+.gu_table caption{padding:.7em 0 .6em .1em;text-align:left}
+.gu_table th,.gu_table td{height:2em;padding:.1em .6em;border:1px solid #ddd;text-align:center}
+.gu_table thead th{width:5em;background:#f1f1f1}
+.gu_table thead th.gu_mc{width:auto}
+.gu_table tbody th{color:#000}
+.gu_table tbody td{color:#06e}
+.gu_table tbody td.gu_mc{text-align:left}
+.gu_ept{color:#ccc}
+.top_menu{margin-top:10px;background:#eee;padding:1em}
+.top_menu a{background:none;text-decoration:underline;padding:0.8em}
+.top_menu a:first-child{padding-left:.1em}
+.top{right:14px;position:absolute;color:red;font-size:11px;font-weight:bold}
+</style>
+</head>
+<body>
+<header role="banner">
+	<h1 class="hd_h1">Swiper :: Swiper 3.4.1</h1> 
+</header>
+<hr>
+<div id="ct">
+	<section role="main">
+		<h2 id="layout" class="sec_h">DEMO</h2>
+		<ul>
+		<li><a href="demos/01_default.html">기본_가로형 <span>/ 01_default.html</span></a></li>
+		<li><a href="demos/02_responsive.html">풀사이즈 <span>/ 02_responsive.html</span></a></li>
+		<li><a href="demos/03_vertical.html">기본_세로형 <span>/ 03_vertical.html</span></a></li>
+		<li><a href="demos/04_space_between.html">카드사이 여백 있는 형태 <span>/ 04_space_between.html</span></a></li>
+		<li><a href="demos/05_slides_per_view.html">동일한 %로 되어진 카드형태(기본 3개, 노출 1개씩 이동) <span>/ 05_slides_per_view.html</span></a></li>
+		<li><a href="demos/06_slides_per_view_auto.html">다른 %로 되어진 카드형태(노출 1개씩 이동) <span>/ 06_slides_per_view_auto.html</span></a></li>
+		<li><a href="demos/07_centered.html">가운데 위치되는 형태(동일한 가로길이) <span>/ 07_centered.html</span></a></li>
+		<li><a href="demos/08_centered_auto.html">가운데 위치되는 형태(다른 가로길이) <span>/ 08_centered_auto.html</span></a></li>
+		<li><a href="demos/09_freemode.html">자유형 <span>/ 09_freemode.html</span></a></li>
+		<li><a href="demos/10_slides_per_column.html">컬럼형 (기본 2행) <span>/ 10_slides_per_column.html</span></a></li>
+		<li><a href="demos/11_nested.html">가로형내부에 세로형 (종합형) <span>/ 11_nested.html</span></a></li>
+		<li><a href="demos/12_grab_cursor.html">마우스커서 손모양 <span>/ 12_grab_cursor.html</span></a></li>
+		<li><a href="demos/13_scrollbar.html">가로 스크롤바 생성 <span>/ 13_scrollbar.html</span></a></li>
+		<li><a href="demos/14_nav_arrows.html">좌우 화살표버튼 <span>/ 14_nav_arrows.html</span></a></li>
+		<li><a href="demos/15_infinite_loop.html">무한 loop <span>/ 15_infinite_loop.html</span></a></li>
+		<li><a href="demos/16_effect_fade.html">Fade 효과 <span>/ 16_effect_fade.html</span></a></li>
+		<li><a href="demos/17_effect_cube.html">Cube 효과 <span>/ 17_effect_cube.html</span></a></li>
+		<li><a href="demos/18_effect_coverflow.html">2D 카드효과 <span>/ 18_effect_coverflow.html</span></a></li>
+		<li><a href="demos/19_keyboard_control.html">기본 _ 키보드 컨트롤 가능 <span>/ 19_keyboard_control.html</span></a></li>
+		<li><a href="demos/20_mousewheel_control.html">세로형 _ 마우스 컨트롤 <span>/ 20_mousewheel_control.html</span></a></li>
+		<li><a href="demos/21_autoplay.html">기본 _ 자동재생 <span>/ 21_autoplay.html</span></a></li>
+		<li><a href="demos/22_dynamic_slides.html">다이나믹 슬라이드 <span>/ 22_dynamic_slides.html</span></a></li>
+		<li><a href="demos/23_thumbs_gallery.html">썸네일 갤러리형 <span>/ 23_thumbs_gallery.html</span></a></li>
+		<li><a href="demos/24_multiple_swipers.html">기본 _ 멀티형 <span>/ 24_multiple_swipers.html</span></a></li>
+		<li><a href="demos/25_hash_navigation.html">기본 _ 링크에 해시형태 <span>/ 25_hash_navigation.html</span></a></li>
+		<li><a href="demos/26_rtl.html">기본 _ 우에서 좌로 <span>/ 26_rtl.html</span></a></li>
+		<li><a href="demos/27_jquery.html">기본 _ 제이쿼리 <span>/ 27_jquery.html</span></a></li>
+		<li><a href="demos/28_parallax.html">가로 패럴럭스 <span>/ 28_parallax.html</span></a></li>
+		<li><a href="demos/29_custom_pagination.html">기본 _ 페이지네이션 커스텀 <span>/ 29_custom_pagination.html</span></a></li>
+		<li><a href="demos/30_lazy_load_images.html">레이지로드 <span>/ 30_lazy_load_images.html</span></a></li>
+		<li><a href="demos/31_custom_plugin.html">기본 _ 커스텀플러그인 <span>/ 31_custom_plugin.html</span></a></li>
+		<li><a href="demos/32_scroll_container.html">컨테이너 스크롤 (y스크롤) <span>/ 32_scroll_container.html</span></a></li>
+		<li><a href="demos/33_responsive_breakpoints.html">반응형 breakpoint <span>/ 33_responsive_breakpoints.html</span></a></li>
+		<li><a href="demos/34_autoheight.html">자동 높이 조절 형태 <span>/ 34_autoheight.html</span></a></li>
+		<li><a href="demos/35_effect_flip.html">플립이펙트 <span>/ 35_effect_flip.html</span></a></li>
+		<li><a href="demos/36_pagination_fraction.html">페이지네이션 분수형 <span>/ 36_pagination_fraction.html</span></a></li>
+		<li><a href="demos/37_pagination_progress.html">프로그레스바 형 <span>/ 37_pagination_progress.html</span></a></li>
+		<li><a href="demos/38_history.html">히스토리 형 <span>/ 38_history.html</span></a></li>
+		<li><a href="demos/39_jquery_ie9_loop.html">IE9 루프형 (IE9대응) <span>/ 39_jquery_ie9_loop.html</span></a></li>
+		<li><a href="demos/40_zoom.html">줌기능 탑재 <span>/ 40_zoom.html</span></a></li>
+		</ul>
+	</section>
+</div>
+<hr>
+<footer role="contentinfo">
+	<dl>
+	<dt>UI Developer</dt>
+	<dd>김성재</dd>
+	</dl>
+</footer>
+</body>
+</html>
