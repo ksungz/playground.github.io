@@ -4,3 +4,7 @@ html/css/js/etc...
 :)
 
 
+## JavaScript EX
+> /javascript/index.html
+
+
