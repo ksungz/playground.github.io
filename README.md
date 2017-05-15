@@ -5,6 +5,6 @@ html/css/js/etc...
 
 
 ## JavaScript EX
-> [Javascript](/javascript/index.html)
+> [Javascript](/javascript/index.html){target="_blank"}
 
 
