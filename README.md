@@ -5,6 +5,4 @@ html/css/js/etc...
 
 
 ## JavaScript EX
-> [Javascript](/javascript/index.html){:target="_blank"}
-
-
+> [Javascript](/javascript/index.html)
