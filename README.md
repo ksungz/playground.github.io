@@ -7,4 +7,4 @@ html/css/js/etc...
 ## JavaScript EX
 > [Javascript](/javascript/index.html)
 
-> (https://github.com/vlueviolet/telltrue33.github.io)
+> https://github.com/vlueviolet/telltrue33.github.io
