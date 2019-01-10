@@ -8,3 +8,10 @@ html/css/js/etc...
 > [Javascript](/javascript/index.html)
 
 > https://github.com/telltrue33
+
+
+
+- Javascript
+- Vue JS
+- React
+- Cordova (Hybrid app)
